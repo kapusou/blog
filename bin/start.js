@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 /**
  * 个人博客系统
- * 前端页面访问: localhost:3000
- * 后端页面访问：localhost:3000/admin
+ * 前端页面访问: localhost:4000
+ * 后端页面访问：localhost:4000/admin
  */
 
 const app = require('../app');
@@ -10,7 +10,7 @@ const debug = require('debug')('blog:server');
 const http = require('http');
 const server = http.createServer(app);
 
-const port = normalizePort(process.env.PORT || '6000');
+const port = normalizePort(process.env.PORT || '4000');
 app.set('port', port);
 
 server.listen(port);
